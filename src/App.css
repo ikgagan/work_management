@@ -54,38 +54,38 @@ body {
 }
 
 .react-flow__node-start {
-  background-color: #f6ffed;
+  /* background-color: #f6ffed;
   border-color: #52c41a;
-  color: #52c41a;
+  color: #52c41a; */
 }
 
 .react-flow__node-task {
-  background-color: #e6f7ff;
+  /* background-color: #e6f7ff;
   border-color: #1890ff;
-  color: #1890ff;
+  color: #1890ff; */
 }
 
 .react-flow__node-decision {
-  background-color: #fffbe6;
+  /* background-color: #fffbe6;
   border-color: #faad14;
-  color: #faad14;
+  color: #faad14; */
 }
 
 .react-flow__node-subprocess {
-  background-color: #f9f0ff;
+  /* background-color: #f9f0ff;
   border-color: #722ed1;
-  color: #722ed1;
+  color: #722ed1; */
 }
 
 .react-flow__node-end {
-  background-color: #fff1f0;
+  /* background-color: #fff1f0;
   border-color: #f5222d;
-  color: #f5222d;
+  color: #f5222d; */
 }
 
 /* Edge Styles */
 .react-flow__edge-path {
-  stroke-width: 2;
+  stroke-width: 1px;
 }
 
 .react-flow__edge-default .react-flow__edge-path {
@@ -93,20 +93,22 @@ body {
 }
 
 .react-flow__edge-success .react-flow__edge-path {
-  stroke: #52c41a;
+  stroke: #999;
 }
 
 .react-flow__edge-failure .react-flow__edge-path {
-  stroke: #f5222d;
+  stroke: #999;
 }
 
 /* Selected Elements */
 .react-flow__node.selected {
-  box-shadow: 0 0 0 2px #1890ff;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
 }
 
 .react-flow__edge.selected .react-flow__edge-path {
-  stroke-width: 3;
+  stroke-width: 1.5px;
 }
 
 /* Process Cards */
@@ -359,115 +361,138 @@ body {
 
 /* Custom Node Styles */
 .custom-node {
-  padding: 14px;
-  border-radius: 8px;
-  border-width: 2px;
-  width: 180px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  width: 160px;
+  box-shadow: none;
   font-size: 13px;
-  transition: all 0.2s ease-in-out;
+  transition: none;
   cursor: pointer;
+  background-color: #ffffff;
+  position: relative;
+  overflow: visible;
 }
 
 .custom-node .custom-node-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.custom-node-icon {
-  margin-bottom: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.custom-node-start .custom-node-icon {
-  color: #52c41a;
-}
-
-.custom-node-task .custom-node-icon {
-  color: #1890ff;
-}
-
-.custom-node-decision .custom-node-icon {
-  color: #faad14;
-}
-
-.custom-node-subprocess .custom-node-icon {
-  color: #722ed1;
-}
-
-.custom-node-end .custom-node-icon {
-  color: #f5222d;
+  width: 100%;
 }
 
 .custom-node .custom-node-label {
-  font-weight: 600;
+  font-weight: normal;
   text-align: center;
-  margin-bottom: 6px;
-  font-size: 14px;
+  margin-bottom: 4px;
+  font-size: 13px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 100%;
+  color: #000000;
 }
 
 .custom-node .custom-node-assignee {
   font-size: 11px;
   text-align: center;
   color: rgba(0, 0, 0, 0.65);
-  background-color: rgba(255, 255, 255, 0.7);
   padding: 2px 6px;
-  border-radius: 4px;
   margin-top: 4px;
 }
 
-/* Node Type Specific Styles */
+/* Override all node type specific styles to use the same styling but with different border colors */
 .custom-node-start {
-  background-color: #f6ffed;
-  border-color: #52c41a;
-  color: #237804;
+  background-color: #ffffff;
+  border-color: #52c41a; /* Green for start */
+  color: #000000;
 }
 
 .custom-node-task {
-  background-color: #e6f7ff;
-  border-color: #1890ff;
-  color: #0050b3;
+  background-color: #ffffff;
+  border-color: #1890ff; /* Blue for task */
+  color: #000000;
 }
 
 .custom-node-decision {
-  background-color: #fffbe6;
-  border-color: #faad14;
-  color: #ad6800;
+  background-color: #ffffff;
+  border-color: #faad14; /* Yellow/orange for decision */
+  color: #000000;
 }
 
 .custom-node-subprocess {
-  background-color: #f9f0ff;
-  border-color: #722ed1;
-  color: #391085;
+  background-color: #ffffff;
+  border-color: #722ed1; /* Purple for subprocess */
+  color: #000000;
 }
 
 .custom-node-end {
-  background-color: #fff1f0;
-  border-color: #f5222d;
-  color: #a8071a;
+  background-color: #ffffff;
+  border-color: #f5222d; /* Red for end */
+  color: #000000;
 }
 
-/* Selected Custom Node */
-.custom-node.selected {
-  box-shadow: 0 0 0 3px #1890ff, 0 2px 8px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+/* Override handle colors to match border colors */
+.custom-node-start .react-flow__handle {
+  border-color: #52c41a;
+}
+
+.custom-node-task .react-flow__handle {
+  border-color: #1890ff;
+}
+
+.custom-node-decision .react-flow__handle {
+  border-color: #faad14;
+}
+
+.custom-node-decision .react-flow__handle-right,
+.custom-node-decision .react-flow__handle-left {
+  background-color: #fff;
+  border-color: #faad14;
+}
+
+.custom-node-subprocess .react-flow__handle {
+  border-color: #722ed1;
+}
+
+.custom-node-end .react-flow__handle {
+  border-color: #f5222d;
 }
 
 /* Hover state */
 .custom-node:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+  box-shadow: none;
+  transform: none;
+  border-color: #c0c0c0;
+}
+
+/* Selected Custom Node - applied directly to the custom-node */
+.custom-node.selected {
+  border-width: 2px;
+  box-shadow: none;
+  transform: none;
+  z-index: 1;
+}
+
+/* Node-specific selected states - maintain original colors */
+.custom-node-start.selected {
+  border-color: #52c41a; /* Keep green for start */
+}
+
+.custom-node-task.selected {
+  border-color: #1890ff; /* Keep blue for task */
+}
+
+.custom-node-decision.selected {
+  border-color: #faad14; /* Keep yellow/orange for decision */
+}
+
+.custom-node-subprocess.selected {
+  border-color: #722ed1; /* Keep purple for subprocess */
+}
+
+.custom-node-end.selected {
+  border-color: #f5222d; /* Keep red for end */
 }
 
 /* Handles (connection points) */
@@ -475,22 +500,12 @@ body {
   width: 8px;
   height: 8px;
   background-color: #fff;
-  border: 2px solid #1890ff;
+  border: 1px solid #999;
+  z-index: 10;
 }
 
 .react-flow__handle:hover {
   background-color: #1890ff;
-}
-
-/* Edge specific styles for connection points */
-.custom-node-decision .react-flow__handle-right {
-  background-color: #fff;
-  border: 2px solid #52c41a;
-}
-
-.custom-node-decision .react-flow__handle-left {
-  background-color: #fff;
-  border: 2px solid #f5222d;
 }
 
 /* Enhanced Dashboard Styles */

@@ -357,6 +357,175 @@
         "emp1741819040703",
         "emp3"
       ]
+    },
+    {
+      "id": "process-46957811-89f1-4542-aa88-c9c93d787505",
+      "name": "New Process",
+      "description": "Process description",
+      "created": "2025-03-13T05:56:18.404Z",
+      "modified": "2025-03-13T06:00:19.560Z",
+      "nodes": [
+        {
+          "id": "node-682589de-923f-4069-a1e3-cd920f9cd3d3",
+          "type": "start",
+          "label": "Start",
+          "position": {
+            "x": -192.66666666666669,
+            "y": -134.66666666666666
+          },
+          "data": {}
+        },
+        {
+          "id": "node-d36b1b31-7844-44f6-883a-11022a3b7e3f",
+          "type": "task",
+          "label": "New Task",
+          "position": {
+            "x": -82.66666666666667,
+            "y": 15.333333333333428
+          },
+          "data": {}
+        },
+        {
+          "id": "node-285356f8-f1d4-418d-8c25-2a997dd7a903",
+          "type": "subprocess",
+          "label": "New Subprocess",
+          "position": {
+            "x": -3.3333333333333144,
+            "y": 155.33333333333337
+          },
+          "data": {}
+        },
+        {
+          "id": "node-4926b8db-2b50-4fec-b433-0217e176b764",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 450
+          },
+          "data": {}
+        },
+        {
+          "id": "node-8bfad7ef-28d1-4460-a173-58ef21d79af5",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 550
+          },
+          "data": {}
+        },
+        {
+          "id": "node-d866c3b2-4fba-4844-9421-fc38c812241c",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 650
+          },
+          "data": {}
+        },
+        {
+          "id": "node-4f98ebf5-e928-4677-8511-f2042bb4ac32",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 750
+          },
+          "data": {}
+        },
+        {
+          "id": "node-e025207d-66ae-43fd-9cf7-8b9d826301ef",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 850
+          },
+          "data": {}
+        },
+        {
+          "id": "node-ca4ddacf-3111-46d6-ae27-b213d37b036f",
+          "type": "subprocess",
+          "label": "New Subprocess",
+          "position": {
+            "x": 250,
+            "y": 950
+          },
+          "data": {}
+        },
+        {
+          "id": "node-1d054ea9-1661-43f0-8501-6082c99111ff",
+          "type": "subprocess",
+          "label": "New Subprocess",
+          "position": {
+            "x": 250,
+            "y": 1050
+          },
+          "data": {}
+        },
+        {
+          "id": "node-ec711c83-fdff-4d6b-83ad-fd50257b3bda",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 1150
+          },
+          "data": {}
+        },
+        {
+          "id": "node-756034ed-7c6a-4a1d-b41f-e2deffe13201",
+          "type": "end",
+          "label": "New End",
+          "position": {
+            "x": 250,
+            "y": 1250
+          },
+          "data": {}
+        },
+        {
+          "id": "node-3cd97fbc-3894-4873-9be6-623549d457ee",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 1350
+          },
+          "data": {}
+        },
+        {
+          "id": "node-c6eef86e-dec2-41ed-af44-89f985d0fd70",
+          "type": "task",
+          "label": "New Task",
+          "position": {
+            "x": 250,
+            "y": 1450
+          },
+          "data": {}
+        },
+        {
+          "id": "node-fdf427db-4c06-4fd0-a183-31d28c5edf2c",
+          "type": "start",
+          "label": "New Start",
+          "position": {
+            "x": 250,
+            "y": 1550
+          },
+          "data": {}
+        }
+      ],
+      "edges": [
+        {
+          "id": "edge-69d4ba7d-09a3-45cc-bf23-0ff7ccd8ad5b",
+          "source": "node-682589de-923f-4069-a1e3-cd920f9cd3d3",
+          "target": "node-d36b1b31-7844-44f6-883a-11022a3b7e3f",
+          "label": "",
+          "type": "default"
+        }
+      ],
+      "assignedPeopleIds": []
     }
   ],
   "employees": [

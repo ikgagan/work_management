@@ -1,6 +1,11 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:3001';
+// Use environment variable if available, otherwise use a relative URL for production
+// or the local development server URL
+const API_BASE_URL = process.env.REACT_APP_API_URL || 
+  (window.location.hostname === 'localhost' 
+    ? 'http://localhost:3001' 
+    : '/api');
 
 export interface ProcessData {
   id: string;
