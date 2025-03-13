@@ -1,0 +1,141 @@
+/* People Component Styles */
+
+.dashboard-container {
+  padding: 24px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.dashboard-subtitle {
+  margin-top: 4px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.create-button {
+  display: flex;
+  align-items: center;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.loading-text {
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.error-message {
+  font-size: 16px;
+}
+
+.stats-row {
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.employee-tabs-card {
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.department-section {
+  margin-bottom: 24px;
+}
+
+.department-tag {
+  margin-right: 8px;
+}
+
+.employee-card {
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.employee-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.employee-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.employee-avatar {
+  margin-right: 16px;
+  background-color: #1890ff;
+}
+
+.employee-card-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.employee-meta-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.employee-meta-icon {
+  margin-right: 8px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.employee-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* Modal styles */
+.ant-modal-content {
+  border-radius: 8px;
+}
+
+.ant-modal-header {
+  border-radius: 8px 8px 0 0;
+}
+
+.ant-form-item-label > label {
+  font-weight: 500;
+}
+
+/* Empty state customization */
+.ant-empty {
+  margin: 32px 0;
+} 

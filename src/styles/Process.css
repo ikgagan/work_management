@@ -1,0 +1,189 @@
+/* Process Components Styles */
+
+/* Common styles */
+.process-title {
+  margin-bottom: 8px !important;
+}
+
+.process-subtitle {
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* ProcessViewer specific styles */
+.process-viewer-container {
+  padding: 24px;
+}
+
+.process-viewer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.back-button {
+  margin-bottom: 16px;
+}
+
+.edit-button {
+  display: flex;
+  align-items: center;
+}
+
+.stats-row {
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.process-details-card {
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.process-description {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 16px;
+}
+
+.flow-container {
+  height: 600px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+/* ProcessEditor specific styles */
+.editor-container {
+  padding: 24px;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.editor-title {
+  display: flex;
+  align-items: center;
+}
+
+.editor-title h2 {
+  margin-left: 16px;
+  margin-bottom: 0;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.save-button {
+  display: flex;
+  align-items: center;
+}
+
+.view-button {
+  display: flex;
+  align-items: center;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.loading-text {
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.error-icon, .not-found-icon {
+  font-size: 48px;
+  color: #f5222d;
+  margin-bottom: 16px;
+}
+
+.error-message {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.error-action, .not-found-action {
+  margin-top: 24px;
+}
+
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.not-found-message {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+/* People assignment styles */
+.assigned-people-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.assigned-person {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: all 0.3s;
+}
+
+.assigned-person:hover {
+  background-color: #f0f0f0;
+}
+
+.assigned-person .ant-avatar {
+  margin-right: 12px;
+  background-color: #1890ff;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.person-info .ant-typography {
+  margin: 0;
+  line-height: 1.4;
+} 

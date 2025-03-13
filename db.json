@@ -1,0 +1,534 @@
+{
+  "processes": [
+    {
+      "id": "process-1",
+      "name": "Customer Onboarding",
+      "description": "Process for onboarding new customers",
+      "created": "2023-01-15T10:30:00.000Z",
+      "modified": "2025-03-12T22:58:28.112Z",
+      "nodes": [
+        {
+          "id": "node-1",
+          "type": "start",
+          "label": "Start",
+          "position": {
+            "x": 180.2594903756828,
+            "y": -30.395309705810064
+          },
+          "data": {}
+        },
+        {
+          "id": "node-2",
+          "type": "task",
+          "label": "Collect Customer Information",
+          "position": {
+            "x": 231.5962544046941,
+            "y": 108.34941786325498
+          },
+          "data": {
+            "assignee": "Sales Team",
+            "description": "Gather basic customer information and requirements"
+          }
+        },
+        {
+          "id": "node-3",
+          "type": "task",
+          "label": "Verify Identity",
+          "position": {
+            "x": 408.85338303316684,
+            "y": 187.03981770026923
+          },
+          "data": {
+            "assignee": "Compliance Team",
+            "description": "Verify customer identity and documentation"
+          }
+        },
+        {
+          "id": "node-4",
+          "type": "decision",
+          "label": "Approval Required?",
+          "position": {
+            "x": 194.78876321408228,
+            "y": 317.0669815662947
+          },
+          "data": {
+            "description": "Determine if additional approval is needed"
+          }
+        },
+        {
+          "id": "node-5",
+          "type": "task",
+          "label": "Get Management Approval",
+          "position": {
+            "x": 450,
+            "y": 450
+          },
+          "data": {
+            "assignee": "Management",
+            "description": "Obtain approval from management for high-value customers"
+          }
+        },
+        {
+          "id": "node-6",
+          "type": "task",
+          "label": "Create Account",
+          "position": {
+            "x": 250,
+            "y": 550
+          },
+          "data": {
+            "assignee": "Account Team",
+            "description": "Set up customer account in the system"
+          }
+        },
+        {
+          "id": "node-7",
+          "type": "end",
+          "label": "End",
+          "position": {
+            "x": 250,
+            "y": 650
+          },
+          "data": {}
+        }
+      ],
+      "edges": [
+        {
+          "id": "edge-1",
+          "source": "node-1",
+          "target": "node-2",
+          "label": "",
+          "type": "default"
+        },
+        {
+          "id": "edge-2",
+          "source": "node-2",
+          "target": "node-3",
+          "label": "",
+          "type": "default"
+        },
+        {
+          "id": "edge-3",
+          "source": "node-3",
+          "target": "node-4",
+          "label": "",
+          "type": "default"
+        },
+        {
+          "id": "edge-4",
+          "source": "node-4",
+          "target": "node-5",
+          "label": "Yes",
+          "type": "success"
+        },
+        {
+          "id": "edge-5",
+          "source": "node-4",
+          "target": "node-6",
+          "label": "No",
+          "type": "failure"
+        },
+        {
+          "id": "edge-6",
+          "source": "node-5",
+          "target": "node-6",
+          "label": "",
+          "type": "default"
+        },
+        {
+          "id": "edge-7",
+          "source": "node-6",
+          "target": "node-7",
+          "label": "",
+          "type": "default"
+        }
+      ],
+      "assignedPeopleIds": [
+        "emp3",
+        "emp2",
+        "emp6",
+        "emp7"
+      ]
+    },
+    {
+      "id": "process-0184cd65-e684-4fac-9d57-f5bb6bfb373e",
+      "name": "New Process",
+      "description": "Process description",
+      "created": "2025-03-12T20:28:08.060Z",
+      "modified": "2025-03-12T21:10:43.217Z",
+      "nodes": [
+        {
+          "id": "node-cb432404-a5c9-4b45-a2e8-bb9d27a060f7",
+          "type": "start",
+          "label": "Start",
+          "position": {
+            "x": 250,
+            "y": 50
+          },
+          "data": {}
+        },
+        {
+          "id": "node-5aff7045-b6d7-4035-a93a-5ba5c6382173",
+          "type": "subprocess",
+          "label": "New Subprocess",
+          "position": {
+            "x": 250,
+            "y": 250
+          },
+          "data": {}
+        },
+        {
+          "id": "node-0ed01a44-3e6b-49fa-a03c-84f1c6af9b08",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 350
+          },
+          "data": {}
+        },
+        {
+          "id": "node-4f155ad0-cda7-4827-bdb7-6db71af6f538",
+          "type": "task",
+          "label": "New Task",
+          "position": {
+            "x": 250,
+            "y": 450
+          },
+          "data": {}
+        }
+      ],
+      "edges": [
+        {
+          "id": "edge-e0670277-7601-47c3-8256-b6f3c81d301f",
+          "source": "node-cb432404-a5c9-4b45-a2e8-bb9d27a060f7",
+          "target": "node-5aff7045-b6d7-4035-a93a-5ba5c6382173",
+          "label": "",
+          "type": "default"
+        },
+        {
+          "id": "edge-bfcf0a94-3515-471c-8ec4-6ed0ff7aa7c1",
+          "source": "node-5aff7045-b6d7-4035-a93a-5ba5c6382173",
+          "target": "node-0ed01a44-3e6b-49fa-a03c-84f1c6af9b08",
+          "label": "",
+          "type": "default"
+        }
+      ]
+    },
+    {
+      "id": "process-aeab6832-a2af-49da-b21d-1025c6a8439c",
+      "name": "new ",
+      "description": "Process description",
+      "created": "2025-03-12T21:10:58.568Z",
+      "modified": "2025-03-12T23:08:44.011Z",
+      "nodes": [
+        {
+          "id": "node-d456e8d0-144b-41f1-9e52-021f5f263cc1",
+          "type": "start",
+          "label": "Start",
+          "position": {
+            "x": 250,
+            "y": 50
+          },
+          "data": {}
+        },
+        {
+          "id": "node-825c6bb2-ba4a-475d-b8e2-413f85e21deb",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 250
+          },
+          "data": {}
+        },
+        {
+          "id": "node-fa8c06bb-8c24-4a15-b9c6-335bc7b4c5bf",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 350
+          },
+          "data": {}
+        },
+        {
+          "id": "node-62fa4f54-6759-4e88-9df9-daab9b039566",
+          "type": "task",
+          "label": "New Task 2",
+          "position": {
+            "x": 250,
+            "y": 450
+          },
+          "data": {}
+        }
+      ],
+      "edges": [],
+      "assignedPeopleIds": [
+        "emp3",
+        "emp5",
+        "emp6",
+        "emp7",
+        "emp8",
+        "emp2"
+      ]
+    },
+    {
+      "id": "process-6e8e3788-6608-421b-81de-081e21b45cdf",
+      "name": "New Process1",
+      "description": "Process description",
+      "created": "2025-03-12T21:13:40.495Z",
+      "modified": "2025-03-12T22:56:44.939Z",
+      "nodes": [
+        {
+          "id": "node-8c99fab5-e80d-4f9d-ae6e-0ff9fb4b881e",
+          "type": "start",
+          "label": "Start",
+          "position": {
+            "x": 250,
+            "y": 50
+          },
+          "data": {}
+        },
+        {
+          "id": "node-87f86ff7-d7c8-4955-8c11-6b0f5d7e7f84",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 250
+          },
+          "data": {}
+        },
+        {
+          "id": "node-fbc9dcd8-caee-4e47-8153-7013e103a2d4",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 350
+          },
+          "data": {}
+        }
+      ],
+      "edges": [],
+      "assignedPeopleIds": []
+    },
+    {
+      "id": "process-c7aeadea-5b1f-416a-8816-8ccb3a436a98",
+      "name": "New Process",
+      "description": "this is for steerwise. ",
+      "created": "2025-03-12T22:54:44.050Z",
+      "modified": "2025-03-12T22:55:48.797Z",
+      "nodes": [
+        {
+          "id": "node-69e0bace-ad85-476c-8baa-aca28f79371a",
+          "type": "start",
+          "label": "Start",
+          "position": {
+            "x": 250,
+            "y": 50
+          },
+          "data": {}
+        },
+        {
+          "id": "node-1fb3a97a-2c8e-4582-8417-6f075c168d09",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 250
+          },
+          "data": {}
+        },
+        {
+          "id": "node-397749fc-5ba3-43c9-9cf6-a30d73c658ea",
+          "type": "decision",
+          "label": "New Decision",
+          "position": {
+            "x": 250,
+            "y": 350
+          },
+          "data": {}
+        }
+      ],
+      "edges": [],
+      "assignedPeopleIds": [
+        "emp1741819040703",
+        "emp3"
+      ]
+    }
+  ],
+  "employees": [
+    {
+      "id": "emp1",
+      "name": "John Smith",
+      "position": "Software Engineer",
+      "department": "Engineering",
+      "email": "john.smith@steerwise.com",
+      "joinDate": "2020-05-12T00:00:00.000Z",
+      "skills": [
+        "React",
+        "TypeScript",
+        "MobX"
+      ]
+    },
+    {
+      "id": "emp2",
+      "name": "Emily Chen",
+      "position": "Senior UI/UX Designer",
+      "department": "Design",
+      "email": "emily.chen@steerwise.com",
+      "joinDate": "2019-10-15T00:00:00.000Z",
+      "skills": [
+        "Figma",
+        "Adobe XD",
+        "User Research"
+      ]
+    },
+    {
+      "id": "emp3",
+      "name": "Michael Johnson",
+      "position": "Product Manager",
+      "department": "Product",
+      "email": "michael.johnson@steerwise.com",
+      "joinDate": "2021-02-20T00:00:00.000Z",
+      "skills": [
+        "Agile",
+        "Product Strategy",
+        "User Stories"
+      ]
+    },
+    {
+      "id": "emp5",
+      "name": "David Wilso",
+      "position": "Frontend Developer",
+      "department": "Engineering",
+      "email": "david.wilson@steerwise.com",
+      "joinDate": "2021-09-10T00:00:00.000Z",
+      "skills": [
+        "React",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "emp6",
+      "name": "Jennifer Lopez",
+      "position": "UX Researcher",
+      "department": "Design",
+      "email": "jennifer.lopez@steerwise.com",
+      "joinDate": "2020-11-18T00:00:00.000Z",
+      "skills": [
+        "User Testing",
+        "Interviews",
+        "Heuristic Evaluation"
+      ]
+    },
+    {
+      "id": "emp7",
+      "name": "Robert Brown",
+      "position": "Backend Developer",
+      "department": "Engineering",
+      "email": "robert.brown@steerwise.com",
+      "joinDate": "2019-08-22T00:00:00.000Z",
+      "skills": [
+        "Node.js",
+        "MongoDB",
+        "Express"
+      ]
+    },
+    {
+      "id": "emp8",
+      "name": "Lisa White",
+      "position": "Project Manager",
+      "department": "Management",
+      "email": "lisa.white@steerwise.com",
+      "joinDate": "2018-06-15T00:00:00.000Z",
+      "skills": [
+        "Scrum",
+        "Jira",
+        "Risk Management"
+      ]
+    },
+    {
+      "id": "emp9",
+      "name": "James Taylor",
+      "position": "DevOps Engineer",
+      "department": "Engineering",
+      "email": "james.taylor@steerwise.com",
+      "joinDate": "2021-04-30T00:00:00.000Z",
+      "skills": [
+        "Docker",
+        "Kubernetes",
+        "CI/CD"
+      ]
+    },
+    {
+      "id": "emp10",
+      "name": "Emma Martinez",
+      "position": "Graphic Designer",
+      "department": "Design",
+      "email": "emma.martinez@steerwise.com",
+      "joinDate": "2022-03-15T00:00:00.000Z",
+      "skills": [
+        "Photoshop",
+        "Illustrator",
+        "Brand Design"
+      ]
+    },
+    {
+      "id": "emp11",
+      "name": "Daniel Lee",
+      "position": "Data Scientist",
+      "department": "Data",
+      "email": "daniel.lee@steerwise.com",
+      "joinDate": "2021-07-12T00:00:00.000Z",
+      "skills": [
+        "Mongodb"
+      ]
+    },
+    {
+      "id": "emp12",
+      "name": "Olivia Harris",
+      "position": "Content Strategist",
+      "department": "Marketing",
+      "email": "olivia.harris@steerwise.com",
+      "joinDate": "2020-09-08T00:00:00.000Z",
+      "skills": [
+        "Content Planning",
+        "SEO",
+        "Copywriting"
+      ]
+    },
+    {
+      "id": "emp1741819040703",
+      "joinDate": "2025-03-12T22:37:20.703Z",
+      "name": "Gagan",
+      "position": "Software Engineer",
+      "department": "Engineering",
+      "email": "ik.gagan@gmail.com",
+      "skills": []
+    },
+    {
+      "id": "emp1741819306470",
+      "joinDate": "2025-03-12T22:41:46.470Z",
+      "name": "John",
+      "position": "Product",
+      "department": "Product",
+      "email": "jhon@gmail.com",
+      "skills": []
+    },
+    {
+      "id": "emp1741819604671",
+      "joinDate": "2025-03-12T22:46:44.671Z",
+      "name": "Max",
+      "position": "Data Engineer ",
+      "department": "Data",
+      "email": "asd@gmail.com",
+      "skills": [
+        "sql"
+      ]
+    }
+  ]
+}

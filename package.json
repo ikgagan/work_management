@@ -1,0 +1,60 @@
+{
+  "name": "businessflow",
+  "version": "1.0.0",
+  "description": "An interactive business process visualization and optimization tool built with React, React Flow, and MobX state management, following MVVM architecture.",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start:server": "json-server --watch db.json --port 3001",
+    "dev": "concurrently \"npm run start\" \"npm run start:server\""
+  },
+  "keywords": [
+    "react",
+    "reactflow",
+    "mobx",
+    "mvvm",
+    "business",
+    "process",
+    "visualization"
+  ],
+  "author": "",
+  "license": "MIT",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.0.0",
+    "@types/lodash": "^4.17.16",
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/uuid": "^9.0.0",
+    "antd": "^5.0.0",
+    "axios": "^1.4.0",
+    "concurrently": "^8.0.0",
+    "json-server": "^0.17.0",
+    "lodash": "^4.17.21",
+    "mobx": "^6.10.0",
+    "mobx-keystone": "^1.0.0",
+    "mobx-react-lite": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "reactflow": "^11.7.0",
+    "typescript": "^4.9.5",
+    "uuid": "^9.0.0"
+  }
+}
