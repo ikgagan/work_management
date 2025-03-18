@@ -12,7 +12,7 @@ I need to create a take-home project for Steerwise that demonstrates my ability 
 3. MobX state management
 4. MVVM architecture
 5. JSON Server for API
-6. SigmaJS (if possible)
+
 
 The project should be professional, not feel like a school assignment, and use Caddy for hosting. 
 Please help me create a comprehensive plan and architecture document.
